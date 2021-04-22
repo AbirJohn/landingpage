@@ -1,0 +1,397 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+a{
+    text-decoration: none;
+}
+ul,ol{
+    list-style-type: none;
+}
+img {
+    vertical-align: middle;
+}
+.clr {
+    clear: both;
+}
+
+.full-wrapper {
+    width: 100%;
+}
+.wrapper {
+    width: 1114px;
+    margin: 0 auto;
+}
+/*==================== Header part css =================*/
+.logo {
+    float: left;
+    width: 214px;
+}
+.logo img {
+    padding-top: 30px;
+}
+.menu {
+    float: left;
+    text-align: right;
+    width: 900px;
+    
+}
+.menu ul li {
+    display: inline-block;
+}
+.menu ul li a {
+    padding: 0 24px;
+    line-height: 100px;
+    font-family: 'Lato', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: #222;
+    transition: all linear .3s;
+    position: relative;
+}
+.menu ul li a:hover {
+    color: #5fc3ff;
+}
+.menu ul li a:after {
+    position: absolute;
+    content: '';
+    width: 50%;
+    height: 2px;
+    background: red;
+    top: -38px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: all linear .3s;
+}
+.menu ul li a:hover:after {
+    opacity: 1;
+    top: 40px;
+}
+/*==================== Banner part css =================*/
+.banner-bg {
+    background: url(../images/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.banner-text {
+    padding-top: 217px;
+    padding-bottom: 90px;
+    text-align: center;
+}
+.banner-text h1 {
+    font-size: 120px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    color: #fff;
+    padding-bottom: 60px;
+    position: relative;
+}
+.banner-text h1:after {
+    position: absolute;
+    content: '';
+    width: 600px;
+    height: 2px;
+    background: #15a4fa;
+    left: 50%;
+    bottom: 41px;
+    transform: translateX(-50%);
+}
+.banner-text p {
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    color: #fff;
+    padding-bottom: 80px;
+}
+.banner-text a {
+    border: 1px solid #15a4fa;
+    padding: 21px 35px;
+    border-radius: 3px;
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    color: #fff;
+}
+.banner-text h4 {
+    padding-top: 200px;
+}
+.banner-text i {
+    font-size: 35px;
+    color: #fff;
+}
+
+/*=================== simple part css ================*/
+.simple-bg {
+    background: #f6f9f9;
+    padding-top: 80px;
+    padding-bottom: 110px;
+}
+.simple {
+    text-align: center;
+}
+.simple h2 {
+    color: #2d3950;
+    font-size: 40px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    padding-bottom: 28px;
+}
+.simple p{
+    color: #999999;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+}
+/*=================== service part css ================*/
+.service {
+    padding:65px 0;
+}
+.service-item {
+    width: 33.33%;
+    float: left;
+    text-align: center;
+}
+.service-icon {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+}
+.icon-left {
+    width: 50px;
+    height: 100%;
+    background: #48baff;
+    float: left;
+}
+.icon-right {
+    width: 50px;
+    height: 100%;
+    background: #5fc3ff;;
+    float: left;
+}
+.service-icon i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 50px;
+    color: #fff;
+}
+.service-item h3 {
+    padding-top: 30px;
+    color: #2d3950;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+}
+.service-item p {
+    padding: 0 40px;
+    padding-top: 18px;
+    color: #999;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+}
+/*=================== gallery part css ================*/
+.gallery-bg {
+    background: #f6f9f9;
+    padding-top: 80px;
+    padding-bottom: 115px;
+}
+.gallery-head {
+    text-align: center;
+       padding-bottom: 80px;
+}
+.gallery-head h2 {
+    font-size: 41px;
+    font-family: 'Lato', sans-serif;
+    color: #2d3950;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+.gallery-head p {
+    font-size: 15px;
+    font-family: 'Lato', sans-serif;
+    color: #909090;
+    font-weight: 400;
+}
+.gallery-item {
+    width: 351px;
+    float: left;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    transition: all linear .3s;
+}
+.gallery-item img {
+    width: 100%;
+     transition: all linear .3s;
+}
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(44, 172, 248, 0.75);
+    text-align: center;
+    opacity: 0;
+    transition: all linear .3s;
+    transform: scale(0);
+}
+.overlay i {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #fff;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0 5px;
+}
+.link2 {
+    transform: rotate(90deg)
+}
+.gallery-item:hover .overlay{
+    opacity: 1;
+    transform: scale(1);
+}
+.gallery-item:hover img {
+    transform: scale(1.4);
+}
+.gallery-item:hover {
+    filter: drop-shadow(0px 0px 10px #2cacf7);
+}
+.mr {
+    margin-right: 0;
+}
+
+/*=================== conatact part css ===================== */
+.contact-bg{
+    background: url(../images/contact-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.contact-bg:before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(45, 56, 76, 0.82);
+}
+.contact-form{
+    position: relative;
+    z-index: 9998;
+    padding-top: 72px;
+    padding-bottom: 110px;
+}
+.contact-head h2{
+    color: #fff;
+}
+.contact-head p{
+    color: #999;
+}
+.contact {
+    width: 550px;
+    margin: 0 auto;
+}
+.contact input {
+    width: 100%;
+    height: 60px;
+    padding-left: 20px;
+    background: none;
+    border: 1px solid #999;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    color: #999;
+}
+.contact input::placeholder,
+.contact textarea::placeholder{
+    color: #999;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+.contact textarea {
+    width: 100%;
+    height: 160px;
+    padding-top: 25px;
+    padding-left: 20px;
+    background: none;
+    border: 1px solid #999;
+    border-radius: 3px;
+    color: #999;
+    resize: none;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+.sub {
+    text-align: center;
+}
+.sub button {
+    padding: 15px 50px; 
+    margin-top: 50px;
+    border: 1px solid #15a4fa;
+    background: none;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: #fff;
+    border-radius: 3px;
+    transition: all linear .3s;
+    cursor: pointer;
+}
+.sub button:hover {
+    background: #15a4fa;
+}
+
+
+.footer-left {
+    width: 50%;
+    float: left;
+    line-height: 90px;
+}
+.footer-right {
+    width: 50%;
+    float: left;
+    text-align: right;
+    line-height: 90px;
+}
+.footer-left p{
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: #999;
+}
+.footer-right i {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: #15a4fa;
+    border-radius: 1px;
+    color: #fff;
+    font-size: 15px;
+}
+
+
+
+
+
+
+
